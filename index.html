@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Challenge DeCoder</title>
+</head>
+
+<body>
+    <main>
+        <section class="wrap wrap-section">
+            <div class="logo no-align">
+                <img src="/assets/logo.png" alt="Logo">
+            </div>
+            <div class="text-chat">
+                <textarea id="textArea" cols="80" rows="25" placeholder="Digit your text"
+                    class="textarea-placeholder"></textarea>
+                <div class="alert">
+                    <img src="/assets/exclamationIcon.png" alt="Exclamation">
+                    <span>Only lowercase letters and no accents.</span>
+                </div>
+                <div class="wrap">
+                    <button onclick="encrypt()" class="btn-full-color">Encrypt</button>
+                    <button onclick="decrypt()" class="btn-rounded-color">Decrypt</button>
+                </div>
+
+            </div>
+            <div class="card-box">
+                <div id="hidden-card" class="container-card">
+                    <img src="/assets/girlSearchDiamond.svg" alt="">
+                    <div class="messege-card">
+                        <h2>No messages found</h2>
+                        <span>Enter text that you want to encrypt or decrypt.</span>
+                    </div>
+                </div>
+                <div id="hidden-messege" class="messege-encrypt">
+                    <div class="no-align" id="encrypted">Messege</div>
+                    <button onclick="copy()" class="btn-rounded-color">Copy</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
